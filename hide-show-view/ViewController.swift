@@ -20,6 +20,15 @@ class ViewController: UIViewController {
     // Dispose of any resources that can be recreated.
   }
 
+  @IBAction func toggleBtnPressed(sender: UIButton) {
+    let view = self.view.viewWithTag(10)
+    
+    if view?.hidden == true {
+      view!.hidden = false
+    } else {
+      view!.hidden = true
+    }
+  }
 
 }
 
